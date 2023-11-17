@@ -11,9 +11,15 @@ const langArray = ["Hello","Hello","नमस्ते ","Hola","Bonjour","Ciao"
 const display = document.getElementsByClassName('display');
 const textSlider = document.getElementsByClassName('text-slider');
 const footerLineBall = document.getElementsByClassName('footer-line-ball');
-
+const s = document.getElementsByClassName('s');
 const header = document.getElementsByClassName('header');
 const fotterContact = document.getElementsByClassName('fotter-contact');
+const footer = document.getElementsByClassName('footer');
+
+const main = document.getElementsByClassName('main');
+
+s[0].style.display = "none";
+
 
 
 let temp2 = 75;
@@ -48,6 +54,7 @@ let id = setInterval(function(){
     if(i == langArray.length){
         clearInterval(id);
         entryPage.style. top  =  -100 + "vh";
+        s[0].style.display = "block";
         helper();
     }
 },150)
